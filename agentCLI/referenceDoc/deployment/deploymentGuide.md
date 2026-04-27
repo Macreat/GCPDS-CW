@@ -34,7 +34,34 @@ v1.0.0 = Production ready
 
 
 ### DEPLOYMENT STEPS
-#### _after cloning the repository using HTTPS or SSH:_
+From here, supposed that you have git installed and git credentials in order to continue: 
+
+
+#### git config 
+
+```bash
+
+
+sudo pacman -S git
+git --version 
+
+# then copy clone : 
+git clone git@github.com:Macreat/GCPDS-CW.git (via ssh)
+
+# now enter to the repo 
+cd ~/GCPDS-CD 
+
+#now check status
+git status
+
+
+
+```
+
+_after cloning and configuring the repository using HTTPS or SSH:_
+
+
+
 
 ```bash
 
@@ -80,7 +107,7 @@ git commit -m "feat(module): descripción clara"
 # 4. Subir
 git push origin feature/nombre-descriptivo
 
-# 5. Crear Pull Request only for push verified and tested changes 
+# 5. this AUTOMATICALLY CREATES A  Pull Request only for push verified and tested changes into our MAIN server 
 # → Description
 # → Checklist
 # → Request review
@@ -89,7 +116,11 @@ git push origin feature/nombre-descriptivo
 
 ## BEFORE COMMIT 
 
+_USING gh actions automatization we just skip this step_ 
+
 ```bash
+
+
 
 # Ejecutar tests
 pytest tests/ -v
@@ -108,6 +139,8 @@ mypy src/
 
 
 ## merge & release 
+
+_THIS ALSO ITS going to be automatizated VIA actions on GH PERSONAL REPOSITORY_
 
 ```bash
 
