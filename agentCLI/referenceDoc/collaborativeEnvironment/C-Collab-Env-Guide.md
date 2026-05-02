@@ -64,13 +64,17 @@ vcpkg + CMake (alternativa)
 
 1. Clonar vcpkg y bootstrap:
 
-   git clone https://github.com/microsoft/vcpkg.git
-   .\vcpkg\bootstrap-vcpkg.bat  # Windows
-   ./vcpkg/bootstrap-vcpkg.sh     # Linux/WSL
+```powershell
+git clone https://github.com/microsoft/vcpkg.git
+.\vcpkg\bootstrap-vcpkg.bat  # Windows
+./vcpkg/bootstrap-vcpkg.sh     # Linux/WSL
+```
 
 2. Integrar con CMake:
 
-   cmake .. -DCMAKE_TOOLCHAIN_FILE=/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake
+```bash
+cmake .. -DCMAKE_TOOLCHAIN_FILE=/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake
+```
 
 Docker para C (ejemplo básico)
 

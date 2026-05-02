@@ -157,9 +157,8 @@ ROLE → OBJECTIVE → CONTEXT → REASONING pattern.
 - Use an "Interpreter" + "Backend agent" pair: Interpreter extracts entities, Backend persists to a local JSON DB.
 - Multimodal sample: audio → Audio agent computes spectrogram → Interpreter summarizes findings.
 
-Refer to ROLE-BASED_GUIDE.md for specific role entry points and code module maps for wideband/narrowband/voice services.
 
-_go to_  [`well prompt information`](wellPrompt/README.md) _for more detail_ 
+_go to_  [`well prompt information`](referenceDoc/wellPrompt/wellPromptingTech.md) _for more detail_ 
 
 
 ## Collaborative & Reproducible environments
@@ -179,7 +178,7 @@ _go to_  [`well prompt information`](wellPrompt/README.md) _for more detail_
 - For C components, prefer building inside WSL or Docker (install build-essential / clang / msys2 on Windows).
 - Use consistent toolchains in CI to avoid "works on my machine" issues.
 
-_go to_  [`collaboratory environment guide`](/C-Collab-Env-Guide.md) _for more detail_ 
+_go to_  [`collaboratory environment guide`](referenceDoc/collaborativeEnvironment/C-Collab-Env-Guide.md) _for more detail_ 
 
 
 
@@ -199,7 +198,7 @@ _go to_  [`collaboratory environment guide`](/C-Collab-Env-Guide.md) _for more d
 
 ## How to contribute (brief)
 
-refers to [`deployment guide`](GCPDS/ANE2/maintenance/qualityAssurance/docs/reference/deploymentGuide.md)
+refers to [`deployment guide`](referenceDoc/deployment/deploymentGuide.md)
 for more details 
 
 A. If the repo uses Python components (recommended for reproducibility): 
@@ -222,8 +221,8 @@ WSL / Linux:
   
 
 After completing these steps, we can align and establish a collaborative environment: 
-
-1. Pick a role/task from ROLE-BASED_GUIDE.md : [`collaboratory environment guide`](../ANE2/maintenance/qualityAssurance/ROLE-BASED_GUIDE.md) 
+· agentCLI\referenceDoc\collaborativeEnvironment\ROLE-BASED_GUIDE.md
+1. Pick a role/task from [`the role based guide`](referenceDoc\collaborativeEnvironment\ROLE-BASED_GUIDE.md) , for specific role entry points and code module maps for wideband/narrowband/voice services. (modules created)
 2. Create a branch (after confirm the repo cloned): <feature>-<role>-<short-desc>
 3. Add tests, type hints, and docs (follow Google docstring style)
 4. Run tests and linters before PR and/or commit.

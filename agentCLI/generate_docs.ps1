@@ -5,7 +5,7 @@ Usage: Open PowerShell as normal user and run: .\generate_docs.ps1
 Requires: Doxygen installed and available on PATH.
 #>
 
-$RepoRoot = "D:\wnOs\wsp\CODE\work\PersonalStuff\GCPDS\agentCLI"
+$RepoRoot = $PSScriptRoot
 $Doxyfile = Join-Path $RepoRoot 'Doxyfile'
 $OutDir = Join-Path $RepoRoot 'docs\doxygen'
 
@@ -46,3 +46,7 @@ if ($LASTEXITCODE -eq 0) {
     Write-Error "Doxygen failed with exit code $LASTEXITCODE"
     exit $LASTEXITCODE
 }
+
+ Write-Host "Preparing deployment folder..."
+   3 robocopy docs\doxygen\html docs /E /XC /XN /XO
+   4 Write-Host "Deployment folder /docs is ready for git push."

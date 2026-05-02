@@ -1,7 +1,28 @@
 var searchData=
 [
-  ['un_20nuevo_20feature_0',['PARA EMPEZAR UN NUEVO FEATURE',['../dc/dbb/md__g_c_p_d_s_2_a_n_e2_2maintenance_2quality_assurance_2docs_2reference_2deployment_guide.html#autotoc_md73',1,'']]],
-  ['use_20tickets_20¿_1',['Team Assignments - USE TICKETS ¿?',['../df/d5f/md__g_c_p_d_s_2_a_n_e2_2maintenance_2quality_assurance_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md50',1,'']]],
-  ['useful_2',['Concepts &amp;amp; Why this tool is useful',['../index.html#autotoc_md1',1,'']]],
-  ['using_20https_20or_20ssh_3a_3',['&lt;em&gt;after cloning the repository using HTTPS or SSH:&lt;/em&gt;',['../dc/dbb/md__g_c_p_d_s_2_a_n_e2_2maintenance_2quality_assurance_2docs_2reference_2deployment_guide.html#autotoc_md71',1,'']]]
+  ['para_20desarrollo_20en_20c_0',['Guía: Entornos colaborativos para desarrollo en C',['../df/dcd/md_reference_doc_2collaborative_environment_2_c-_collab-_env-_guide.html',1,'']]],
+  ['para_20empezar_20un_20nuevo_20feature_1',['PARA EMPEZAR UN NUEVO FEATURE',['../d3/d71/md_reference_doc_2deployment_2deployment_guide.html#autotoc_md84',1,'']]],
+  ['pep_20257_20google_20style_2',['2.3 DOCSTRINGS (PEP 257 + Google Style)',['../d1/dd6/md_reference_doc_2deployment_2develop_standars.html#autotoc_md94',1,'']]],
+  ['pep_20484_3',['2.2 TYPE HINTS (PEP 484)',['../d1/dd6/md_reference_doc_2deployment_2develop_standars.html#autotoc_md93',1,'']]],
+  ['pep_208_20formatting_4',['&lt;b&gt;2.1 PEP 8 - Formatting&lt;/b&gt;',['../d1/dd6/md_reference_doc_2deployment_2develop_standars.html#autotoc_md92',1,'']]],
+  ['performance_20test_20checklist_5',['PERFORMANCE TEST CHECKLIST',['../d1/dd6/md_reference_doc_2deployment_2develop_standars.html#autotoc_md101',1,'']]],
+  ['physical_20design_20implementation_6',['1.3. Physical Design (implementation)',['../dc/d2b/md_reference_doc_2well_prompt_2well_prompting_tech.html#autotoc_md114',1,'']]],
+  ['pipeline_7',['4. MÓDULO MAIN PIPELINE',['../d0/d77/md_reference_doc_2deployment_2architecture_modules.html#autotoc_md76',1,'']]],
+  ['pipeline_20py_8',['Archivo: src/rf_spectrum/pipeline.py',['../d0/d77/md_reference_doc_2deployment_2architecture_modules.html#autotoc_md77',1,'']]],
+  ['point_9',['Point',['../dd/dbc/md_reference_doc_2collaborative_environment_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md17',1,'Starting Point'],['../dd/dbc/md_reference_doc_2collaborative_environment_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md29',1,'Starting Point'],['../dd/dbc/md_reference_doc_2collaborative_environment_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md44',1,'Starting Point']]],
+  ['points_10',['Slack/Meeting Talking Points',['../dd/dbc/md_reference_doc_2collaborative_environment_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md41',1,'']]],
+  ['pr_20was_20rejected_20what_20now_11',['My PR was rejected - what now?',['../dd/dbc/md_reference_doc_2collaborative_environment_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md64',1,'']]],
+  ['practices_12',['Code Quality &amp;amp; Best Practices',['../d1/dd6/md_reference_doc_2deployment_2develop_standars.html#autotoc_md89',1,'']]],
+  ['practices_13',['Prompting best practices',['../index.html#autotoc_md4',1,'']]],
+  ['processing_20layer_14',['3. MODULO PROCESSING LAYER',['../d0/d77/md_reference_doc_2deployment_2architecture_modules.html#autotoc_md73',1,'']]],
+  ['processing_20noise_5ffloor_20py_15',['Archivo: src/rf_spectrum/processing/noise_floor.py',['../d0/d77/md_reference_doc_2deployment_2architecture_modules.html#autotoc_md74',1,'']]],
+  ['processing_20normalization_20py_16',['Archivo: src/rf_spectrum/processing/normalization.py',['../d0/d77/md_reference_doc_2deployment_2architecture_modules.html#autotoc_md75',1,'']]],
+  ['progress_20of_20the_20project_20this_20generate_20a_20specific_20structure_20on_20the_20project_20design_20_3a_17',['Divide the project into different roles according to the progress of the project, this generate a specific structure on the project design :',['../dc/d2b/md_reference_doc_2well_prompt_2well_prompting_tech.html#autotoc_md107',1,'']]],
+  ['project_20design_20_3a_18',['Divide the project into different roles according to the progress of the project, this generate a specific structure on the project design :',['../dc/d2b/md_reference_doc_2well_prompt_2well_prompting_tech.html#autotoc_md107',1,'']]],
+  ['project_20into_20different_20roles_20according_20to_20the_20progress_20of_20the_20project_20this_20generate_20a_20specific_20structure_20on_20the_20project_20design_20_3a_19',['Divide the project into different roles according to the progress of the project, this generate a specific structure on the project design :',['../dc/d2b/md_reference_doc_2well_prompt_2well_prompting_tech.html#autotoc_md107',1,'']]],
+  ['project_20structure_20',['1. Continue with the project structure',['../dc/d2b/md_reference_doc_2well_prompt_2well_prompting_tech.html#autotoc_md109',1,'']]],
+  ['project_20this_20generate_20a_20specific_20structure_20on_20the_20project_20design_20_3a_21',['Divide the project into different roles according to the progress of the project, this generate a specific structure on the project design :',['../dc/d2b/md_reference_doc_2well_prompt_2well_prompting_tech.html#autotoc_md107',1,'']]],
+  ['prompting_20best_20practices_22',['Prompting best practices',['../index.html#autotoc_md4',1,'']]],
+  ['prs_23',['Code Review Checklist (For PRs)',['../dd/dbc/md_reference_doc_2collaborative_environment_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md40',1,'']]],
+  ['py_24',['py',['../d0/d77/md_reference_doc_2deployment_2architecture_modules.html#autotoc_md71',1,'&lt;b&gt;Archivo: &lt;span class=&quot;tt&quot;&gt;src/rf_spectrum/data/loader.py&lt;/span&gt;&lt;/b&gt;'],['../d0/d77/md_reference_doc_2deployment_2architecture_modules.html#autotoc_md72',1,'Archivo: src/rf_spectrum/data/validator.py'],['../d0/d77/md_reference_doc_2deployment_2architecture_modules.html#autotoc_md77',1,'Archivo: src/rf_spectrum/pipeline.py'],['../d0/d77/md_reference_doc_2deployment_2architecture_modules.html#autotoc_md74',1,'Archivo: src/rf_spectrum/processing/noise_floor.py'],['../d0/d77/md_reference_doc_2deployment_2architecture_modules.html#autotoc_md75',1,'Archivo: src/rf_spectrum/processing/normalization.py']]]
 ];

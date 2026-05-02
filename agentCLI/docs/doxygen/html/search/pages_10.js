@@ -1,11 +1,9 @@
 var searchData=
 [
-  ['narrow_20band_0',['narrow band',['../df/d5f/md__g_c_p_d_s_2_a_n_e2_2maintenance_2quality_assurance_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md58',1,'']]],
-  ['narrowband_1',['NARROWBAND',['../df/d5f/md__g_c_p_d_s_2_a_n_e2_2maintenance_2quality_assurance_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md28',1,'']]],
-  ['network_20health_2',['1. Monitor Network Health',['../df/d5f/md__g_c_p_d_s_2_a_n_e2_2maintenance_2quality_assurance_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md47',1,'']]],
-  ['new_3',['Database Structure (NEW)',['../df/d5f/md__g_c_p_d_s_2_a_n_e2_2maintenance_2quality_assurance_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md37',1,'']]],
-  ['noise_20floor_20snr_4',['WEEK 1: Noise Floor &amp;amp; SNR',['../df/d5f/md__g_c_p_d_s_2_a_n_e2_2maintenance_2quality_assurance_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md33',1,'']]],
-  ['normalize_20spectra_20across_20bands_5',['2. Normalize Spectra Across Bands',['../df/d5f/md__g_c_p_d_s_2_a_n_e2_2maintenance_2quality_assurance_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md21',1,'']]],
-  ['now_6',['My PR was rejected - what now?',['../df/d5f/md__g_c_p_d_s_2_a_n_e2_2maintenance_2quality_assurance_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md64',1,'']]],
-  ['nuevo_20feature_7',['PARA EMPEZAR UN NUEVO FEATURE',['../dc/dbb/md__g_c_p_d_s_2_a_n_e2_2maintenance_2quality_assurance_2docs_2reference_2deployment_guide.html#autotoc_md73',1,'']]]
+  ['handling_0',['4. ERROR HANDLING',['../d1/dd6/md_reference_doc_2deployment_2develop_standars.html#autotoc_md103',1,'']]],
+  ['health_1',['1. Monitor Network Health',['../dd/dbc/md_reference_doc_2collaborative_environment_2_r_o_l_e-_b_a_s_e_d___g_u_i_d_e.html#autotoc_md47',1,'']]],
+  ['high_20level_20idea_2',['1.1. Conceptual Design (high-level idea)',['../dc/d2b/md_reference_doc_2well_prompt_2well_prompting_tech.html#autotoc_md110',1,'']]],
+  ['hints_20pep_20484_3',['2.2 TYPE HINTS (PEP 484)',['../d1/dd6/md_reference_doc_2deployment_2develop_standars.html#autotoc_md93',1,'']]],
+  ['how_20to_20contribute_20brief_4',['How to contribute (brief)',['../index.html#autotoc_md9',1,'']]],
+  ['https_20or_20ssh_3a_5',['&lt;em&gt;after cloning the repository using HTTPS or SSH:&lt;/em&gt;',['../d3/d71/md_reference_doc_2deployment_2deployment_guide.html#autotoc_md82',1,'']]]
 ];
