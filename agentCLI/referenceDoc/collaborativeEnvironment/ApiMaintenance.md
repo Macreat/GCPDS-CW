@@ -83,13 +83,11 @@ QualityAssurance/
 ## Phase 2: Data Validation & Ingestion (PLANNED)
 
 ### Tasks
-1. **schema-validator** — Python module to validate CSV columns against DICTIONARY.md schema 
-
->    **see DatasetFM1-2 NB**
-
-2. **unit-converter** — Helper functions for dB ↔ linear, Hz conversions, timestamp normalization
-3. **csv-ingestion** — Load per-node CSVs; validate schema; ingest into consolidated structure
-4. **test-ingestion** — Unit tests for schema and unit validation
+1. **schema-validator** — Python module to validate CSV columns against the canonical `DICTIONARY.md` (tracked in `agentCLI/referenceDoc/collaborativeEnvironment/`)
+2. **DatasetFM1-2 NB** — Reference notebook for data validation and ingestion patterns.
+3. **unit-converter** — Helper functions for dB ↔ linear, Hz conversions, timestamp normalization
+4. **csv-ingestion** — Load per-node CSVs; validate schema; ingest into consolidated structure
+5. **test-ingestion** — Unit tests for schema and unit validation
 
 ### Success Criteria
 - All 10 per-node CSVs load (OPTIMAL) without schema errors

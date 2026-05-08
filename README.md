@@ -8,12 +8,13 @@ The project is structured to provide clear documentation for its various compone
 
 - **`docs/`**: Contains the generated documentation (Doxygen/HTML).
 - **`agentCLI/`**: Contains documentation sources, installation guides, and reference documents for the Multiagent CLI.
-- **`software/`**: Additional software documentation and API references.
+- **`software/`**: Core API documentation and architecture. See [SOFTWARE ARCHITECTURE & API](https://gcpdscw.vercel.app/dir_900b16b0635db2353bbcd3cec7bc9ede.html) (or the corresponding generated page).
 
 ## Main Content Sections
 
 - **Agents CLI:** Installation guides, concepts, and usage for the command-line interface. See `agentCLI/AGENTS_CLI.md`.
 - **coWorkEnv:** Guides on collaborative development, deployment standards, and environment setup. See `agentCLI/COWORK.md`.
+- **Software API:** Strategic vision and technical architecture for the RF monitoring API. See `software/README.md`.
 
 ## Deployment
 
