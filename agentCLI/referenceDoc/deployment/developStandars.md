@@ -1,5 +1,5 @@
 
-# DEVELOPMENT STANDARDS
+# DEVELOPMENT STANDARDS {#develop_standards}
 ## Code Quality & Best Practices
 
 ### 1. ESTRUCTURA DE ARCHIVOS

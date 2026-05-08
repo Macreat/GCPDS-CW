@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api-maintenance",
+      "destination": "/docs/d7/d8d/_api_maintenance.html"
+    },
+    {
+      "source": "/",
+      "destination": "/docs/index.html"
+    },
+    {
+      "source": "/((?!docs/).*)",
+      "destination": "/docs/$1"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-# Multiagent for chatbots management
+# Multiagent for chatbots management {#agents_cli_management}
 
 This project seeks to develop a multiagente system capable of managing different chatbots, coordinating its answers according to:
 

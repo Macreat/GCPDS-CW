@@ -1,0 +1,57 @@
+# Doxyfile 1.9 - coWorkEnv consolidated documentation
+# Minimal Doxygen config to generate HTML pages from repository markdown files
+
+PROJECT_NAME           = "coWorkEnv"
+PROJECT_BRIEF          = "Consolidated documentation for Agents CLI and Collaborative Environments"
+
+# Absolute output directory to avoid path resolution issues when invoking doxygen from any cwd
+OUTPUT_DIRECTORY       = ../docs/doxygen
+CREATE_SUBDIRS         = YES
+
+# Generate only HTML (no LaTeX/PDF)
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+HTML_OUTPUT            = html
+GENERATE_TREEVIEW      = YES
+
+# Reduce noise during generation
+QUIET                 = YES
+WARNINGS              = NO
+WARN_IF_UNDOCUMENTED  = NO
+
+# Input files (relative paths for portability)
+INPUT                  = README.md \
+                         AGENTS_CLI.md \
+                         COWORK.md \
+                         referenceDoc/wellPrompt/wellPromptingTech.md \
+                         referenceDoc/collaborativeEnvironment/C-Collab-Env-Guide.md \
+                         referenceDoc/collaborativeEnvironment/ApiMaintenance.md \
+                         referenceDoc/deployment/architectureModules.md \
+                         referenceDoc/deployment/deploymentGuide.md \
+                         referenceDoc/deployment/developStandars.md
+
+# Patterns and formats
+FILE_PATTERNS          = *.md
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = README.md
+MARKDOWN_SUPPORT       = YES
+# Avoid EXTENSION_MAPPING to prevent compatibility errors with some Doxygen versions
+INPUT_ENCODING         = UTF-8
+STRIP_FROM_PATH        = .
+FULL_PATH_NAMES        = NO
+
+# Image handling
+IMAGE_PATH             = referenceDoc/wellPrompt
+
+# Presentation
+SOURCE_BROWSER         = NO
+INLINE_SOURCES         = NO
+TAB_SIZE               = 4
+
+# Keep output minimal and focused: do not document code symbols
+EXTRACT_ALL            = NO
+
+# End of Doxyfile

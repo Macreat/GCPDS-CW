@@ -1,4 +1,4 @@
-# Guía: Entornos colaborativos para desarrollo en C
+# Guía: Entornos colaborativos para desarrollo en C {#collab_env_guide}
 
 Resumen
       

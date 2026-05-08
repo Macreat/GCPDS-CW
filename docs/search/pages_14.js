@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['módulo_20main_20pipeline_0',['4. MÓDULO MAIN PIPELINE',['../d1/df9/arch_modules.html#autotoc_md82',1,'']]],
+  ['módulo_3a_20data_20layer_1',['2. MÓDULO: DATA LAYER',['../d1/df9/arch_modules.html#autotoc_md76',1,'']]],
+  ['módulos_20interconectados_2',['1. FLOW DIAGRAM (Módulos Interconectados)',['../d1/df9/arch_modules.html#autotoc_md75',1,'']]],
+  ['main_20pipeline_3',['4. MÓDULO MAIN PIPELINE',['../d1/df9/arch_modules.html#autotoc_md82',1,'']]],
+  ['maintenance_4',['API maintenance',['../d7/d8d/_api_maintenance.html',1,'cowork_section']]],
+  ['management_5',['DEPLOYMENT &amp;amp; RELEASE MANAGEMENT',['../dc/d18/deployment_guide.html',1,'cowork_section']]],
+  ['management_6',['Multiagent Management',['../da/d04/agents_cli_section.html#autotoc_md9',1,'']]],
+  ['management_7',['Multiagent for chatbots management',['../d5/d65/agents_cli_management.html',1,'agents_cli_section']]],
+  ['management_3a_20multi_20agent_20systems_8',['2. Advanced Management: Multi-Agent Systems',['../index.html#autotoc_md4',1,'']]],
+  ['map_9',['0. MODULE DEPENDENCY MAP',['../d1/df9/arch_modules.html#autotoc_md74',1,'']]],
+  ['matrix_10',['TEST MATRIX',['../df/d85/develop_standards.html#autotoc_md102',1,'']]],
+  ['md_20—_20table_20format_20name_20type_20unit_20description_20source_20importance_2025_20core_20variables_20final_20notes_20on_20unit_20consistency_20and_20primary_20keys_11',['- &lt;b&gt;DICTIONARY.md&lt;/b&gt; — Table format (name | type | unit | description | source | importance); ~25 core variables; final notes on unit consistency and primary keys',['../d7/d8d/_api_maintenance.html#autotoc_md53',1,'']]],
+  ['merge_20release_12',['merge &amp;amp; release',['../dc/d18/deployment_guide.html#autotoc_md91',1,'']]],
+  ['milestones_13',['Timeline &amp;amp; Milestones',['../d7/d8d/_api_maintenance.html#autotoc_md70',1,'']]],
+  ['model_14',['1.2. Logical Design (formal model)',['../d5/d65/agents_cli_management.html#autotoc_md24',1,'']]],
+  ['module_20architecture_20modules_20reference_15',['MODULE ARCHITECTURE &amp;amp; MODULES REFERENCE',['../d1/df9/arch_modules.html',1,'cowork_section']]],
+  ['module_20dependency_20map_16',['0. MODULE DEPENDENCY MAP',['../d1/df9/arch_modules.html#autotoc_md74',1,'']]],
+  ['module_20state_20of_20design_3a_17',['2. Task list for each module/state of design:',['../d5/d65/agents_cli_management.html#autotoc_md28',1,'']]],
+  ['modules_20reference_18',['MODULE ARCHITECTURE &amp;amp; MODULES REFERENCE',['../d1/df9/arch_modules.html',1,'cowork_section']]],
+  ['modulo_20processing_20layer_19',['3. MODULO PROCESSING LAYER',['../d1/df9/arch_modules.html#autotoc_md79',1,'']]],
+  ['multi_20agent_20systems_20',['2. Advanced Management: Multi-Agent Systems',['../index.html#autotoc_md4',1,'']]],
+  ['multiagent_20for_20chatbots_20management_21',['Multiagent for chatbots management',['../d5/d65/agents_cli_management.html',1,'agents_cli_section']]],
+  ['multiagent_20management_22',['Multiagent Management',['../da/d04/agents_cli_section.html#autotoc_md9',1,'']]]
+];
