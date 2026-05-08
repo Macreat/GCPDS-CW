@@ -116,13 +116,18 @@ Core Logical Agents (Conceptual Level for the General System). Each agent is def
 also has those services to implement: (as microservices)
 
 - **Detection Agent:** Identifies signals within target ranges. (as anaylisis motor)
-- **Monitoring Agent:** Provides analysis endpoints.
+- **Monitoring Agent:** Provides analysis endpoints. (already implemented)
 - **Alert Agent:** utilize collected data to drive the detection agent and automatically dispatch alerts via SMS or EMAIL. 
     - The system must allow registering and querying financial transactions in real time, generating alerts when suspicious behaviors are detected, and providing a detailed history so that the security team can analyze possible frauds. Additionally, users must be able to view detailed reports that include metrics and statistics on transactions, highlighting those that present anomalous or unusual patterns.
 
 
 At this stage, we define *what components exist* and *their responsibilities*, not the implementation details.
 
+
+REST -> API pública
+gRPC -> comunicación interna entre microservicios
+WebSocket -> notificaciones en tiempo real
+Webhooks -> integraciones con Stripe y SendGrid
 
 
 #### Database view:   
@@ -223,8 +228,8 @@ Define a pipeline, a parallel branch and the API structure:
 - ` SDR `
 → Ingestion Service
 → Message Broker
-→ Storage Service
-→ Time-Series Database
+<→ Storage Service
+<→ Time-Series Database
 
 Here, we define the logical processing model. 
 
@@ -512,7 +517,7 @@ LAST BUT NOT LEAST, we define the **microservices architecture** for our system
 
 _FRONTEND_ 
 
-- **MODULES**
+- **MODULESW- ¿ENDPOINTS?**
 
     - Auth module.
 
@@ -616,7 +621,7 @@ full implementation details
 put here the API code deployment : 
 
 <details>
-<summary>CODE</summary>
+<summary>CODE (for reference)</summary>
 
 1. First we preprare the environment for manage and deploy the system 
 
