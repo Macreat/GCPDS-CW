@@ -39,4 +39,12 @@ With your local agents ready, the next step is to align your workspace with the 
 
 ---
 
+## 4. Professional Engineering: Software Architecture & API
+
+For those involved in the technical core, this section covers the strategic vision, requirements engineering, and multi-tier architecture of the RF monitoring API. Learn about our edge computing strategy, microservices ecosystem, and data persistence layers.
+
+\ref software_page "Explore Software Architecture & API Reference"
+
+---
+
 *This documentation is part of the coWorkEnv project. For any issues or contributions, please refer to the [Deployment Guide](\ref deployment_guide).*

@@ -94,13 +94,13 @@ $(function(){initNavTree('da/d04/agents_cli_section.html','../../',''); });
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__a_g_e_n_t_s___c_l_i"></a></p>
 <p>This section contains documentation related to the Multiagent CLI, including installation guides, concepts, and management tools.</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
 Multiagent Management</h1>
 <ul>
 <li><a class="el" href="../../d5/d65/agents_cli_management.html" title="Multiagent for chatbots management">Multiagent for chatbots management</a></li>
 </ul>
 <hr  />
-<h1 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
 Concepts &amp; Why this tool is useful</h1>
 <p>Makes building, editing and deploying AI agents on a simple way.</p>
 <ul>
@@ -114,7 +114,7 @@ Concepts &amp; Why this tool is useful</h1>
 <li>OpenAI GPT-4 / GPT-5-mini (creative &amp; reasoning)</li>
 <li>gemini CLI (multimodal tasks)</li>
 </ul>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
 Copilot CLI — installation, get started, and concepts</h1>
 <p>This section pulls together official Copilot documentation so contributors can install and run Copilot CLI from the terminal, understand core concepts, and find tutorials.</p>
 <p>Installation (choose one):</p>
@@ -188,7 +188,7 @@ Copilot CLI — installation, get started, and concepts</h1>
 <li>Use Copilot CLI for exploratory, role-based sessions in this repository. Run <span class="tt">copilot</span> from a module directory (e.g., <span class="tt">GCPDS/agentCLI/</span>) so Copilot can read nearby files and provide targeted suggestions.</li>
 <li>For CI automation, use <span class="tt">copilot -p</span> in scripts, but carefully scope <span class="tt">--allow-tool</span> flags.</li>
 </ul>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
 Gemini CLI — installation, concepts, and quickstart</h1>
 <p>Gemini CLI brings Google Gemini models into the terminal with support for skills, sandboxing, headless automation, and project-aware context.</p>
 <p>Installation (recommended):</p>
@@ -232,7 +232,7 @@ Gemini CLI — installation, concepts, and quickstart</h1>
 <li>Use <span class="tt">gemini</span> for multimodal and skill-driven local workflows. Run it from module directories (e.g., <span class="tt">GCPDS/agentCLI/</span>) so Gemini can access nearby files and provide context-aware help.</li>
 <li>Prefer interactive mode for exploration and headless mode for scripted automation in CI (with careful auth and scoped permissions).</li>
 </ul>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
 Prompting best practices</h1>
 <p>Start prompts with:</p><ol type="1">
 <li>Role: (who should respond — e.g., "Coordinator agent")</li>
@@ -248,21 +248,21 @@ Prompting best practices</h1>
 <li>Output: JSON list of files &amp; recommended tests</li>
 </ul>
 <p>ROLE → OBJECTIVE → CONTEXT → REASONING pattern.</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
 Exploring / Examples to try</h1>
 <ul>
 <li>Run a role-based review pass: assign "Reviewer" role and ask for TODOs per module.</li>
 <li>Use an "Interpreter" + "Backend agent" pair: Interpreter extracts entities, Backend persists to a local JSON DB.</li>
 <li>Multimodal sample: audio → Audio agent computes spectrogram → Interpreter summarizes findings.</li>
 </ul>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
 Integrating other tools (text, image, video)</h1>
 <ul>
 <li>Text: editors (VSCode), linters, unit tests. Use Copilot extensions for developer productivity.</li>
 <li>Images: ImageMagick or Pillow for image ops; OpenAI or Gemini image endpoints for multimodal prompts.</li>
 <li>Video/audio: ffmpeg, librosa, PyTorch/TensorFlow for deep analysis; Audio agent design is in basisReadme.md.</li>
 </ul>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
 Security &amp; Open Source</h1>
 <ul>
 <li>This project favors open-source tooling; keep API keys and secrets out of the repo (.gitignore .env files).</li>

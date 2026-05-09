@@ -6,7 +6,7 @@ This section contains the core documentation for the ANE Frequency Monitoring & 
 The project delivers a high-performance, distributed system leveraging Edge Computing and ML for real-time spectral analysis.
 
 ## Core Documentation
-- \subpage software_readme "API Project Vision & Requirements"
+- \subpage software_readme_page "API Project Vision & Requirements"
 - \subpage software_arch "System Architecture & Logical Design" (Planned)
 
 ---

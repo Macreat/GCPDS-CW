@@ -1,4 +1,6 @@
-# ANE Frequency Monitoring & Signal Intelligence API {#software_readme}
+# ANE Frequency Monitoring & Signal Intelligence API {#software_readme_page}
+
+\page software_readme_page ANE Frequency Monitoring & Signal Intelligence API
 
 ## Project Vision & Strategic Objectives
 This project aims to deliver a high-performance, distributed API system for the Software Defined Radio (SDR) monitoring network across Colombia. By leveraging Edge Computing, Event-Driven Microservices, and Machine Learning, the system provides real-time signal intelligence, automated anomaly detection, and massive-scale spectral data analysis.
@@ -26,7 +28,7 @@ This project aims to deliver a high-performance, distributed API system for the 
 - **Retention:** Raw data retention for 6 months; metadata/detections stored indefinitely.
 - **Throughput:** Capable of handling millions of samples per second via partitioning.
 
-![Requirements Documentation](documentation/Requirements.png)
+![Requirements Documentation](Requirements.png)
 *Referenced External Requirements:* `../../content/APIrequirements/detailed_reqs.png`
 
 ---
@@ -41,7 +43,7 @@ The system acts as a distributed nervous system for RF spectrum monitoring.
 - **The Core (API & Microservices):** Orchestrates data flow, storage, and intelligence.
 - **The Edge (Processing Layer):** Pure C implementation on Raspberry Pi/Edge devices to minimize backhaul bandwidth.
 
-![System Structure](documentation/structure.png)
+![System Structure](api_structure.png)
 
 ### 2.2 Logical Design (Formal Component Model)
 An **Event-Driven Microservices Architecture** ensures the system remains decoupled and highly available.
@@ -50,7 +52,7 @@ An **Event-Driven Microservices Architecture** ensures the system remains decoup
 - **Parallel Intelligence Branch:** Message Broker → ML Detection Service → Alert Service.
 - **API Gateway:** Centralized entry point for Client Applications (Angular Dashboard).
 
-![Logical UML](documentation/basicUML.png)
+![Logical UML](basicUML.png)
 
 ---
 
@@ -62,7 +64,7 @@ To optimize performance, the Fast Fourier Transform (FFT) and initial filtering 
 - **Protocol:** TCP/UDP for raw streams; JSON/UDC for processed metadata.
 - **Buffering:** Local ring-buffers to prevent data loss during network jitter.
 
-![Edge Computing Strategy](documentation/edgeCloudCopmuting.png)
+![Edge Computing Strategy](edgeCloudCopmuting.png)
 
 ### 3.2 Microservices Ecosystem
 | Service | Responsibility | Tech Stack |
@@ -73,7 +75,7 @@ To optimize performance, the Fast Fourier Transform (FFT) and initial filtering 
 | **Admin** | Node management & RBAC | NestJS |
 | **Monitoring** | System health & Pipeline telemetry | Prometheus / Grafana |
 
-![Microservices Documentation](documentation/microserviceDocumentation.png)
+![Microservices Documentation](microserviceDocumentation.png)
 
 ### 3.3 Data Strategy & Persistence
 The system utilizes **PostgreSQL** with time-series partitioning to handle massive datasets efficiently.
@@ -82,7 +84,7 @@ The system utilizes **PostgreSQL** with time-series partitioning to handle massi
 - **Indexing:** BRIN (Block Range Index) for time-series and B-Tree for metadata.
 - **Storage:** Metadata in Relational DB; Raw high-frequency samples in specialized Time-Series DB (TSDB) or Object Storage (S3).
 
-![ER Diagram](documentation/ER.png)
+![ER Diagram](ER.png)
 
 ---
 

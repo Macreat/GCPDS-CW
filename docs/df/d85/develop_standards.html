@@ -93,9 +93,9 @@ $(function(){initNavTree('df/d85/develop_standards.html','../../',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_reference_doc_2deployment_2develop_standars"></a></p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md93"></a>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md149"></a>
 Code Quality &amp; Best Practices</h1>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md94"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md150"></a>
 1. ESTRUCTURA DE ARCHIVOS</h2>
 <div class="fragment"><div class="line">rf_spectrum_analysis/</div>
 <div class="line">├── src/</div>
@@ -172,9 +172,9 @@ Code Quality &amp; Best Practices</h1>
 <div class="line">├── README.md</div>
 <div class="line">├── CHANGELOG.md</div>
 <div class="line">└── .gitignore</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md95"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md151"></a>
 2. ESTÁNDARES DE CODIGO</h2>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md96"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md152"></a>
 <b>2.1 PEP 8 - Formatting</b></h3>
 <div class="fragment"><div class="line"><span class="comment">#  CORRECTO</span></div>
 <div class="line"><span class="keyword">class </span>SpectrumAnalyzer:</div>
@@ -203,7 +203,7 @@ Code Quality &amp; Best Practices</h1>
 <li>UPPER_CASE para constantes</li>
 <li>Import ordering: stdlib → third-party → local</li>
 </ul>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md97"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md153"></a>
 2.2 TYPE HINTS (PEP 484)</h3>
 <div class="fragment"><div class="line"><span class="comment"># ✓ CORRECTO: Todo tipado</span></div>
 <div class="line"><span class="keyword">from</span> typing <span class="keyword">import</span> Dict, List, Optional, Tuple</div>
@@ -226,7 +226,7 @@ Code Quality &amp; Best Practices</h1>
 <div class="line"><span class="comment">#  INCORRECTO: Sin type hints</span></div>
 <div class="line"><span class="keyword">def </span>estimate_noise_floor(pxx_array, method=&quot;histogram&quot;):</div>
 <div class="line">    <span class="keywordflow">pass</span></div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md98"></a>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md154"></a>
 2.3 DOCSTRINGS (PEP 257 + Google Style)</h3>
 <div class="fragment"><div class="line"><span class="keyword">def </span>normalize_psd(</div>
 <div class="line">    pxx: np.ndarray,</div>
@@ -272,9 +272,9 @@ Code Quality &amp; Best Practices</h1>
 <div class="line">    </div>
 <div class="line">    <span class="comment"># Implementación</span></div>
 <div class="line">    ...</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md99"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md155"></a>
 3. TESTING REQUIREMENTS</h2>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md100"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md156"></a>
 3.1 Unit Test Template</h3>
 <div class="fragment"><div class="line"><span class="keyword">from</span> ... tests/test_processing/test_normalization.py : </div>
 <div class="line"> </div>
@@ -318,7 +318,7 @@ Code Quality &amp; Best Practices</h1>
 <div class="line"> </div>
 <div class="line"> Run <span class="keyword">with</span>:</div>
 <div class="line"> - pytest tests/test_processing/test_normalization.py -v --cov</div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md101"></a>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md157"></a>
 3.2 Integration Test Template</h3>
 <p>tests/test_integration.py</p>
 <div class="fragment"><div class="line"><span class="keyword">class </span>TestEndToEndPipeline:</div>
@@ -343,7 +343,7 @@ Code Quality &amp; Best Practices</h1>
 <div class="line">        <span class="keyword">assert</span> results[<span class="stringliteral">&#39;corr_matrix&#39;</span>].shape == (6, 6)</div>
 <div class="line">        <span class="keyword">assert</span> np.allclose(np.diag(results[<span class="stringliteral">&#39;corr_matrix&#39;</span>]), 1.0)</div>
 <div class="line">        <span class="keyword">assert</span> (tmp_path / <span class="stringliteral">&quot;results.json&quot;</span>).exists()</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md102"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md158"></a>
 TEST MATRIX</h2>
 <div class="fragment"><div class="line">┌──────────────────┬──────────┬──────┬─────────┬─────────┐</div>
 <div class="line">│ Test Type        │ Location │ Tool │ Coverage│ Trigger │ </div>
@@ -354,7 +354,7 @@ TEST MATRIX</h2>
 <div class="line">│ Performance      │bench/    │custom│ -       │ release │ </div>
 <div class="line">│ Documentation    │docs/     │check │ 100%    │    PR   │  </div>
 <div class="line">└──────────────────┴──────────┴──────┴─────────┴─────────┘</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md103"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md159"></a>
 UNIT TEST CHECKLIST</h2>
 <ul class="check">
 <li class="unchecked">Cada función pública tiene ≥2 tests (happy path + edge case)</li>
@@ -374,7 +374,7 @@ UNIT TEST CHECKLIST</h2>
 <ul class="check">
 <li class="unchecked">Reproducibilidad con seed=42</li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md104"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md160"></a>
 INTEGRATION TEST CHECKLIST</h2>
 <ul class="check">
 <li class="unchecked">Pipeline completo (load → process → output)</li>
@@ -391,7 +391,7 @@ INTEGRATION TEST CHECKLIST</h2>
 <ul class="check">
 <li class="unchecked">Mismo resultado con ejecuciones múltiples</li>
 </ul>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md105"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md161"></a>
 PERFORMANCE TEST CHECKLIST</h2>
 <ul class="check">
 <li class="unchecked">Full pipeline &lt; 2 segundos (6 nodes, 104 records)</li>
@@ -406,7 +406,7 @@ PERFORMANCE TEST CHECKLIST</h2>
 <li class="unchecked">Correlation computation optimizado</li>
 </ul>
 <hr  />
- <h2 class="doxsection"><a class="anchor" id="autotoc_md107"></a>
+ <h2 class="doxsection"><a class="anchor" id="autotoc_md163"></a>
 4. ERROR HANDLING</h2>
 <div class="fragment"><div class="line"><span class="comment"># ✓ CORRECTO: Manejo exhaustivo de errores</span></div>
 <div class="line"> </div>
@@ -444,7 +444,7 @@ PERFORMANCE TEST CHECKLIST</h2>
 <div class="line">    <span class="keywordflow">except</span> Exception <span class="keyword">as</span> e:</div>
 <div class="line">        logger.critical(f<span class="stringliteral">&quot;Unexpected error loading {filepath}: {e}&quot;</span>)</div>
 <div class="line">        <span class="keywordflow">raise</span></div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md108"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md164"></a>
 5. LOGGING STANDARDS</h2>
 <p><em>config/logging.yaml</em></p>
 <p>```bash</p>

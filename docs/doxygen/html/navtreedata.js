@@ -27,7 +27,8 @@ var NAVTREE =
   [ "coWorkEnv", "index.html", [
     [ "Agents CLI — Guide for co-workers", "index.html", "index" ],
     [ "AGENTS CLI", "da/d04/agents_cli_section.html", "da/d04/agents_cli_section" ],
-    [ "COWORK", "d6/dbd/cowork_section.html", "d6/dbd/cowork_section" ]
+    [ "COWORK", "d6/dbd/cowork_section.html", "d6/dbd/cowork_section" ],
+    [ "SOFTWARE ARCHITECTURE &amp; API", "d5/d1d/software_page.html", "d5/d1d/software_page" ]
   ] ]
 ];
 

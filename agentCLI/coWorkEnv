@@ -26,9 +26,13 @@ WARN_IF_UNDOCUMENTED  = NO
 INPUT                  = README.md \
                          AGENTS_CLI.md \
                          COWORK.md \
+                         SOFTWARE.md \
+                         ../software/README.md \
+                         ../software \
                          referenceDoc/wellPrompt/wellPromptingTech.md \
                          referenceDoc/collaborativeEnvironment/C-Collab-Env-Guide.md \
                          referenceDoc/collaborativeEnvironment/ApiMaintenance.md \
+                         referenceDoc/collaborativeEnvironment/DICTIONARY.md \
                          referenceDoc/deployment/architectureModules.md \
                          referenceDoc/deployment/deploymentGuide.md \
                          referenceDoc/deployment/developStandars.md
@@ -36,6 +40,10 @@ INPUT                  = README.md \
 # Patterns and formats
 FILE_PATTERNS          = *.md
 RECURSIVE              = YES
+EXCLUDE                = ../software/api \
+                         ../software/documentation/IanSommervilleNotes.md \
+                         ../software/documentation/studyContent.md \
+                         ../software/md.md
 USE_MDFILE_AS_MAINPAGE = README.md
 MARKDOWN_SUPPORT       = YES
 # Avoid EXTENSION_MAPPING to prevent compatibility errors with some Doxygen versions
@@ -44,7 +52,8 @@ STRIP_FROM_PATH        = .
 FULL_PATH_NAMES        = NO
 
 # Image handling
-IMAGE_PATH             = referenceDoc/wellPrompt
+IMAGE_PATH             = referenceDoc/wellPrompt \
+                         ../software/documentation
 
 # Presentation
 SOURCE_BROWSER         = NO
