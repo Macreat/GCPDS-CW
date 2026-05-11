@@ -93,14 +93,14 @@ $(function(){initNavTree('dc/d18/deployment_guide.html','../../',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_reference_doc_2deployment_2deployment_guide"></a></p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md140"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md160"></a>
 VERSION SCHEME</h2>
 <div class="fragment"><div class="line">v[MAJOR].[MINOR].[PATCH]</div>
 <div class="line">v0.1.0 = Initial release</div>
 <div class="line">v0.2.0 = New feature (backward compatible)</div>
 <div class="line">v0.2.1 = Bug fix</div>
 <div class="line">v1.0.0 = Production ready</div>
-</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md141"></a>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md161"></a>
 ESTÁNDARES RÁPIDOS</h1>
 <div class="fragment"><div class="line">- Aspecto   Estándar </div>
 <div class="line">- Line length   100 chars</div>
@@ -109,9 +109,9 @@ ESTÁNDARES RÁPIDOS</h1>
 <div class="line">- Type hints    Siempre</div>
 <div class="line">- Test coverage ≥80%</div>
 <div class="line">- Commits   Conventional</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md142"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md162"></a>
 DEPLOYMENT STEPS</h2>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md143"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md163"></a>
 <em>after cloning the repository using HTTPS or SSH:</em></h3>
 <div class="fragment"><div class="line"># 1. Prepare release</div>
 <div class="line">git checkout main</div>
@@ -133,9 +133,9 @@ DEPLOYMENT STEPS</h2>
 <div class="line"> </div>
 <div class="line"># 6. Archive</div>
 <div class="line">aws s3 cp dist/ s3://rf-spectrum-releases/v$(python setup.py --version)/</div>
-</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md144"></a>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md164"></a>
 QUICK REFERENCE - CONTROL VERSION</h1>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md145"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md165"></a>
 PARA EMPEZAR UN NUEVO FEATURE</h2>
 <div class="fragment"><div class="line"># 1. Actualizar main</div>
 <div class="line">git checkout main &amp;&amp; git pull</div>
@@ -154,7 +154,7 @@ PARA EMPEZAR UN NUEVO FEATURE</h2>
 <div class="line"># → Description</div>
 <div class="line"># → Checklist</div>
 <div class="line"># → Request review</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md146"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md166"></a>
 BEFORE COMMIT</h2>
 <div class="fragment"><div class="line"># Ejecutar tests</div>
 <div class="line">pytest tests/ -v</div>
@@ -168,7 +168,7 @@ BEFORE COMMIT</h2>
 <div class="line"> </div>
 <div class="line"># Type checking</div>
 <div class="line">mypy src/</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md147"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md167"></a>
 merge &amp; release</h2>
 <div class="fragment"><div class="line"># Merge feature (asumiendo PR approved)</div>
 <div class="line">git checkout main</div>
@@ -181,7 +181,7 @@ merge &amp; release</h2>
 <div class="line"> </div>
 <div class="line"># Cleanup</div>
 <div class="line">git branch -d feature/nombre</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md148"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md168"></a>
 checklist</h2>
 <ul>
 <li>[] run full test suite</li>

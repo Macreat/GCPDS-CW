@@ -34,7 +34,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"d1/d47/collab_env_guide.html"
+"d0/d15/gh_actions_c_i_c_d.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

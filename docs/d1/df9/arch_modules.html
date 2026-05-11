@@ -93,7 +93,7 @@ $(function(){initNavTree('d1/df9/arch_modules.html','../../',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_reference_doc_2deployment_2architecture_modules"></a></p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md130"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md150"></a>
 0. MODULE DEPENDENCY MAP</h2>
 <div class="fragment"><div class="line">IMPORTS ONLY FROM:</div>
 <div class="line"> </div>
@@ -135,7 +135,7 @@ $(function(){initNavTree('d1/df9/arch_modules.html','../../',''); });
 <div class="line">    └─ logger.py</div>
 <div class="line"> </div>
 <div class="line">NO CIRCULAR IMPORTS!</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md131"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md151"></a>
 1. FLOW DIAGRAM (Módulos Interconectados)</h2>
 <div class="fragment"><div class="line">┌─────────────────────────────────────────────────────────┐</div>
 <div class="line">│ USER ENTRY POINT │</div>
@@ -156,9 +156,9 @@ $(function(){initNavTree('d1/df9/arch_modules.html','../../',''); });
 <div class="line">▼ ▼ ▼ ▼ ▼</div>
 <div class="line">data/ process config visual logger</div>
 <div class="line">loader core mgmt output</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md132"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md152"></a>
 2. MÓDULO: DATA LAYER</h2>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md133"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md153"></a>
 <b>Archivo: <span class="tt">src/rf_spectrum/data/loader.py</span></b></h3>
 <div class="fragment"><div class="line"><span class="stringliteral">&quot;&quot;&quot;Data loading and management.&quot;&quot;&quot;</span></div>
 <div class="line"> </div>
@@ -211,7 +211,7 @@ $(function(){initNavTree('d1/df9/arch_modules.html','../../',''); });
 <div class="line">    <span class="stringliteral">&quot;&quot;&quot;Validate DataFrame structure and content.&quot;&quot;&quot;</span></div>
 <div class="line">    required_cols = {<span class="stringliteral">&#39;timestamp&#39;</span>, <span class="stringliteral">&#39;pxx&#39;</span>, <span class="stringliteral">&#39;latitude&#39;</span>, <span class="stringliteral">&#39;longitude&#39;</span>}</div>
 <div class="line">    <span class="keywordflow">return</span> required_cols.issubset(df.columns)</div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md134"></a>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md154"></a>
 Archivo: src/rf_spectrum/data/validator.py</h3>
 <div class="fragment"><div class="line"><span class="stringliteral">&quot;&quot;&quot;Data validation and quality checks.&quot;&quot;&quot;</span></div>
 <div class="line"> </div>
@@ -235,9 +235,9 @@ Archivo: src/rf_spectrum/data/validator.py</h3>
 <div class="line">    ) -&gt; Dict[str, list]:</div>
 <div class="line">        <span class="stringliteral">&quot;&quot;&quot;Generate anomaly report across all nodes.&quot;&quot;&quot;</span></div>
 <div class="line">        ...</div>
-</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md135"></a>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md155"></a>
 3. MODULO PROCESSING LAYER</h2>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md136"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md156"></a>
 Archivo: src/rf_spectrum/processing/noise_floor.py</h3>
 <div class="fragment"><div class="line"><span class="stringliteral">&quot;&quot;&quot;Noise floor estimation algorithms.&quot;&quot;&quot;</span></div>
 <div class="line"> </div>
@@ -272,7 +272,7 @@ Archivo: src/rf_spectrum/processing/noise_floor.py</h3>
 <div class="line">    <span class="keyword">def </span>percentile_method(pxx: np.ndarray, p: float = 5) -&gt; float:</div>
 <div class="line">        <span class="stringliteral">&quot;&quot;&quot;Alternative: percentile-based noise floor.&quot;&quot;&quot;</span></div>
 <div class="line">        ...</div>
-</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md137"></a>
+</div><!-- fragment --><h3 class="doxsection"><a class="anchor" id="autotoc_md157"></a>
 Archivo: src/rf_spectrum/processing/normalization.py</h3>
 <div class="fragment"><div class="line"><span class="stringliteral">&quot;&quot;&quot;Spectral correlation analysis.&quot;&quot;&quot;</span></div>
 <div class="line"> </div>
@@ -331,9 +331,9 @@ Archivo: src/rf_spectrum/processing/normalization.py</h3>
 <div class="line">            key=<span class="keyword">lambda</span> x: x[1],</div>
 <div class="line">            reverse=<span class="keyword">True</span></div>
 <div class="line">        ))</div>
-</div><!-- fragment --> <h3 class="doxsection"><a class="anchor" id="autotoc_md138"></a>
+</div><!-- fragment --> <h3 class="doxsection"><a class="anchor" id="autotoc_md158"></a>
 4. MÓDULO MAIN PIPELINE</h3>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md139"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md159"></a>
 Archivo: src/rf_spectrum/pipeline.py</h3>
 <div class="fragment"><div class="line"><span class="stringliteral">&quot;&quot;&quot;Main analysis pipeline orchestrator.&quot;&quot;&quot;</span></div>
 <div class="line"> </div>

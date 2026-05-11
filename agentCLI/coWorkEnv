@@ -33,6 +33,7 @@ INPUT                  = README.md \
                          referenceDoc/collaborativeEnvironment/C-Collab-Env-Guide.md \
                          referenceDoc/collaborativeEnvironment/ApiMaintenance.md \
                          referenceDoc/collaborativeEnvironment/DICTIONARY.md \
+                         referenceDoc/collaborativeEnvironment/GHActionsCICD.md \
                          referenceDoc/deployment/architectureModules.md \
                          referenceDoc/deployment/deploymentGuide.md \
                          referenceDoc/deployment/developStandars.md
