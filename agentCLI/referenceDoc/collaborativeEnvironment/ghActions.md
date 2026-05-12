@@ -147,6 +147,8 @@ jobs:
         run: ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ~/node-app && npm install"
 ```
 
+
+
 # TEST WORKFLOW
 
 finally i can test my workflow using ACT, allows to run GH ACTIONS SCRIPTS offline.
