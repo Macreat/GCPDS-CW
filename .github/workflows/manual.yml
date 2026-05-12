@@ -1,52 +1,60 @@
-# This is a basic workflow that is manually triggered
+name: Deployment Page
 
-name: deployment page 
-
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
 on:
   workflow_dispatch:
-    # Inputs the workflow accepts.
     inputs:
       name:
-        # Friendly description to be shown in the UI instead of 'name'
-        description: ' u are my 1st person to greet'
-        # Default value if no value is explicitly provided
+        description: 'Person to greet'
         required: true
-        # The data type of the input
         type: string
+        default: 'User'
 
-  push: 
-    # Trigger the workflow on push to the main branch
-    branches: [main]
-  pull request: 
-    branches:  [main] 
+  push:
+    branches:
+      - main
 
-   
- 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "greet"
-  greet:
-    # The type of runner that the job will run on
+  deploy-docs:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-    # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ inputs.name }}"
-    
-    - name : regenerate web page 
-      run : | 
-        echo "regenerating web page"
-        .\generatedocs.ps1
-        git checkout ghPage 
-        git clean -fdx
-        git rm -rf
-        git checkout main -- docs/
-        git add .
-        git commit -m " automation : regenerate web page" 
-        git push origin ghPage
-        
+    permissions:
+      contents: write
 
+    steps:
+      - name: Checkout codee
+        uses: actions/checkout@v4
+
+      - name: Install Doxygen
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen
+
+      - name: Regenerate Documentation
+        shell: pwsh
+        run: |
+          $greetName = "${{ github.event.inputs.name }}"
+
+          if ([string]::IsNullOrEmpty($greetName)) {
+            $greetName = "User"
+          }
+
+          Write-Host "Hello $greetName, regenerating web page..."
+
+          if (!(Test-Path "docs")) {
+            New-Item -ItemType Directory -Path "docs"
+          }
+
+          ./generatedocs.ps1
+
+      # --- Desactivar Jekyll ---
+      - name: Disable Jekyll
+        run: touch docs/.nojekyll
+
+      - name: Deploy to ghPage branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs
+          branch: ghPage
+          clean: true
+          single-commit: true
+          commit-message: "automation: update documentation and disable jekyll"
