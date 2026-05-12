@@ -1,5 +1,6 @@
 # Agents CLI — Guide for co-workers {#mainpage}
 
+# ADD CI/CD for repository 
 
 Welcome to the consolidated documentation for the **Agents CLI** and **Collaborative Work Environments**. This guide is designed to take you from a local setup to a fully collaborative development workflow.
 
