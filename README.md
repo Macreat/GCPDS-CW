@@ -18,7 +18,7 @@ The project is structured to provide clear documentation for its various compone
 
 ## Deployment
 
-The documentation is automatically deployed to [gcpdscw.vercel.app](https://gcpdscw.vercel.app/) via Vercel integration with the `main` branch.
+The documentation is automatically deployed to [gcpdscw.vercel.app](https://gcpdscw.vercel.app/) via Vercel integration with the `ghpage` branch and posterior GH actions deployment implementation. 
 
 - **Vercel Config**: Controlled by `vercel.json` in the root.
 - **Root Directory**: Set to `./` in Vercel settings.

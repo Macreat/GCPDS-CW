@@ -57,4 +57,4 @@ jobs:
           branch: ghPage
           clean: true
           single-commit: true
-          commit-message: "automation: update documentation and disable jekyll"
+          commit-message: "automation: update documentation once jekyll is disabled"

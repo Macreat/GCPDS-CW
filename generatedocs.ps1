@@ -38,7 +38,11 @@ Write-Host "Copying generated files to /docs..." -ForegroundColor Green
 # We copy contents of html folder into docs root.
 Copy-Item -Path "$SourcePath\*" -Destination $DestinationPath -Recurse -Force
 
-# 5. Cleanup the intermediate doxygen folder
+# 5. Copy vercel.json to docs folder for deployment configuration
+Write-Host "Copying vercel.json to /docs..." -ForegroundColor Cyan
+Copy-Item -Path "vercel.json" -Destination $DestinationPath -Force
+
+# 6. Cleanup the intermediate doxygen folder
 Write-Host "Cleaning up temporary files..." -ForegroundColor Yellow
 Remove-Item -Path (Join-Path (Get-Location) "docs/doxygen") -Recurse -Force
 
