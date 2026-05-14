@@ -1,0 +1,63 @@
+name: Deploy Documentation (GH Pages & Vercel)
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Necessary for pushing back to main
+
+      - name: Install Doxygen
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen
+
+      - name: Generate Docs
+        shell: pwsh
+        run: |
+          if (!(Test-Path "docs")) {
+            New-Item -ItemType Directory -Path "docs"
+          }
+          ./generatedocs.ps1
+
+      - name: Disable Jekyll
+        run: touch docs/.nojekyll
+
+      # 1. Update the docs folder in main branch for Vercel
+      # This ensures Vercel (monitoring main) sees the updated documentation.
+      - name: Update docs folder in main
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs
+          branch: main
+          target-folder: docs
+          clean: false
+          commit-message: "automation: update documentation for Vercel deployment"
+
+      # 2. Upload artifact for GitHub Pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/
+
+      # 3. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
