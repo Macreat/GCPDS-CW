@@ -127,7 +127,7 @@ var NAVTREE =
         [ "ESTÁNDARES RÁPIDOS", "dc/d18/deployment_guide.html#autotoc_md162", [
           [ "VERSION SCHEME", "dc/d18/deployment_guide.html#autotoc_md161", null ],
           [ "DEPLOYMENT STEPS", "dc/d18/deployment_guide.html#autotoc_md163", [
-            [ "<em>after cloning the repository using HTTPS or SSH:</em>", "dc/d18/deployment_guide.html#autotoc_md164", null ]
+            [ "git config", "dc/d18/deployment_guide.html#autotoc_md164", null ]
           ] ]
         ] ],
         [ "QUICK REFERENCE - CONTROL VERSION", "dc/d18/deployment_guide.html#autotoc_md165", [

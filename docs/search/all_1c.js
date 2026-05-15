@@ -10,6 +10,5 @@ var searchData=
   ['use_20case_20b_3a_20quality_20assurance_20schema_20check_20ci_7',['Use Case B: Quality Assurance &amp; Schema Check (CI)',['../dd/dce/ghActionsCICD.html#autotoc_md138',1,'']]],
   ['use_20case_20c_3a_20secure_20deployment_20to_20edge_20nodes_8',['Use Case C: Secure Deployment to Edge Nodes',['../dd/dce/ghActionsCICD.html#autotoc_md139',1,'']]],
   ['use_20cases_20for_20our_20repository_9',['3. Specific Use Cases for our Repository',['../dd/dce/ghActionsCICD.html#autotoc_md136',1,'']]],
-  ['useful_10',['Concepts &amp; Why this tool is useful',['../da/d04/agents_cli_section.html#autotoc_md14',1,'']]],
-  ['using_20https_20or_20ssh_3a_20em_11',['&lt;em&gt;after cloning the repository using HTTPS or SSH:&lt;/em&gt;',['../dc/d18/deployment_guide.html#autotoc_md164',1,'']]]
+  ['useful_10',['Concepts &amp; Why this tool is useful',['../da/d04/agents_cli_section.html#autotoc_md14',1,'']]]
 ];

@@ -111,8 +111,21 @@ ESTÁNDARES RÁPIDOS</h1>
 <div class="line">- Commits   Conventional</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md163"></a>
 DEPLOYMENT STEPS</h2>
+<p>From here, supposed that you have git installed and git credentials in order to continue:</p>
 <h3><a class="anchor" id="autotoc_md164"></a>
-&lt;em&gt;after cloning the repository using HTTPS or SSH:&lt;/em&gt;</h3>
+git config</h3>
+<div class="fragment"><div class="line">sudo pacman -S git</div>
+<div class="line">git --version </div>
+<div class="line"> </div>
+<div class="line"># then copy clone : </div>
+<div class="line">git clone git@github.com:Macreat/GCPDS-CW.git (via ssh)</div>
+<div class="line"> </div>
+<div class="line"># now enter to the repo </div>
+<div class="line">cd ~/GCPDS-CD </div>
+<div class="line"> </div>
+<div class="line">#now check status</div>
+<div class="line">git status</div>
+</div><!-- fragment --><p><em>after cloning and configuring the repository using HTTPS or SSH:</em></p>
 <div class="fragment"><div class="line"># 1. Prepare release</div>
 <div class="line">git checkout main</div>
 <div class="line">git pull origin main</div>
@@ -150,12 +163,13 @@ PARA EMPEZAR UN NUEVO FEATURE</h2>
 <div class="line"># 4. Subir</div>
 <div class="line">git push origin feature/nombre-descriptivo</div>
 <div class="line"> </div>
-<div class="line"># 5. Crear Pull Request only for push verified and tested changes </div>
+<div class="line"># 5. this AUTOMATICALLY CREATES A  Pull Request only for push verified and tested changes into our MAIN server </div>
 <div class="line"># → Description</div>
 <div class="line"># → Checklist</div>
 <div class="line"># → Request review</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md167"></a>
 BEFORE COMMIT</h2>
+<p><em>USING gh actions automatization we just skip this step</em></p>
 <div class="fragment"><div class="line"># Ejecutar tests</div>
 <div class="line">pytest tests/ -v</div>
 <div class="line"> </div>
@@ -170,6 +184,7 @@ BEFORE COMMIT</h2>
 <div class="line">mypy src/</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md168"></a>
 merge &amp; release</h2>
+<p><em>THIS ALSO ITS going to be automatizated VIA actions on GH PERSONAL REPOSITORY</em></p>
 <div class="fragment"><div class="line"># Merge feature (asumiendo PR approved)</div>
 <div class="line">git checkout main</div>
 <div class="line">git merge --squash feature/nombre</div>

@@ -5,13 +5,14 @@ var searchData=
   ['get_20started_20and_20concepts_2',['Copilot CLI — installation, get started, and concepts',['../da/d04/agents_cli_section.html#autotoc_md15',1,'']]],
   ['getting_20started_3a_20the_20agents_20cli_3',['1. Getting Started: The Agents CLI',['../index.html#autotoc_md2',1,'']]],
   ['gh_20actions_20for_20ane_4',['Why GH Actions for ANE?',['../dd/dce/ghActionsCICD.html#autotoc_md132',1,'']]],
-  ['github_20actions_20ci_20cd_3a_20guide_20for_20ane_20project_5',['GitHub Actions CI/CD: Guide for ANE Project',['../dd/dce/ghActionsCICD.html',1,'cowork_section']]],
-  ['github_20workflows_20cd_20deploy_20yml_20tt_6',['CD: Documentation &amp; Deployment (&lt;tt&gt;.github/workflows/cd-deploy.yml&lt;/tt&gt;)',['../dd/dce/ghActionsCICD.html#autotoc_md143',1,'']]],
-  ['github_20workflows_20ci_20validation_20yml_20tt_7',['CI: Validation Workflow (&lt;tt&gt;.github/workflows/ci-validation.yml&lt;/tt&gt;)',['../dd/dce/ghActionsCICD.html#autotoc_md142',1,'']]],
-  ['goals_8',['Primary Goals',['../d1/dcf/apiMaintenance.html#autotoc_md81',1,'']]],
-  ['goals_20success_20criteria_9',['Goals &amp; Success Criteria',['../d1/dcf/apiMaintenance.html#autotoc_md80',1,'']]],
-  ['google_20style_10',['2.3 DOCSTRINGS (PEP 257 + Google Style)',['../df/d85/develop_standards.html#autotoc_md175',1,'']]],
-  ['guía_3a_20entornos_20colaborativos_20para_20desarrollo_20en_20c_11',['Guía: Entornos colaborativos para desarrollo en C',['../d1/d47/collab_env_guide.html',1,'cowork_section']]],
-  ['guide_20for_20ane_20project_12',['GitHub Actions CI/CD: Guide for ANE Project',['../dd/dce/ghActionsCICD.html',1,'cowork_section']]],
-  ['guide_20for_20co_20workers_13',['Agents CLI — Guide for co-workers',['../index.html',1,'']]]
+  ['git_20config_5',['git config',['../dc/d18/deployment_guide.html#autotoc_md164',1,'']]],
+  ['github_20actions_20ci_20cd_3a_20guide_20for_20ane_20project_6',['GitHub Actions CI/CD: Guide for ANE Project',['../dd/dce/ghActionsCICD.html',1,'cowork_section']]],
+  ['github_20workflows_20cd_20deploy_20yml_20tt_7',['CD: Documentation &amp; Deployment (&lt;tt&gt;.github/workflows/cd-deploy.yml&lt;/tt&gt;)',['../dd/dce/ghActionsCICD.html#autotoc_md143',1,'']]],
+  ['github_20workflows_20ci_20validation_20yml_20tt_8',['CI: Validation Workflow (&lt;tt&gt;.github/workflows/ci-validation.yml&lt;/tt&gt;)',['../dd/dce/ghActionsCICD.html#autotoc_md142',1,'']]],
+  ['goals_9',['Primary Goals',['../d1/dcf/apiMaintenance.html#autotoc_md81',1,'']]],
+  ['goals_20success_20criteria_10',['Goals &amp; Success Criteria',['../d1/dcf/apiMaintenance.html#autotoc_md80',1,'']]],
+  ['google_20style_11',['2.3 DOCSTRINGS (PEP 257 + Google Style)',['../df/d85/develop_standards.html#autotoc_md175',1,'']]],
+  ['guía_3a_20entornos_20colaborativos_20para_20desarrollo_20en_20c_12',['Guía: Entornos colaborativos para desarrollo en C',['../d1/d47/collab_env_guide.html',1,'cowork_section']]],
+  ['guide_20for_20ane_20project_13',['GitHub Actions CI/CD: Guide for ANE Project',['../dd/dce/ghActionsCICD.html',1,'cowork_section']]],
+  ['guide_20for_20co_20workers_14',['Agents CLI — Guide for co-workers',['../index.html',1,'']]]
 ];
